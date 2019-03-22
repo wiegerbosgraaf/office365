@@ -9,4 +9,4 @@ Set-UnifiedGroup -Identity “Your Team’s name” -HiddenFromExchangeClientsEn
 
 #If you only want to show the Team in the Outlook Global Address list and not in the Group section, 
 #you need to execute the following command instead:
-Set-UnifiedGroup -Identity ” Your Team’s name ” -HiddenFromAddressListsEnabled:$False
+Set-UnifiedGroup -Identity “Your Team’s name” -HiddenFromAddressListsEnabled:$False
