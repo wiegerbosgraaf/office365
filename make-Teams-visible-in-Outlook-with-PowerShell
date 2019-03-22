@@ -1,6 +1,7 @@
 #Wanneer je tegenwoordig een Team aanmaakt zal de bijbehorende groep niet meer in Outlook worden weergeven. 
 #Dat is vervelend als je hier gesprekken wilt blijven volgen. Wil je dit wel, 
 #maak dan eerst de groep aan binnen Outlook en gebruik deze groep als sjabloon voor je Team. 
+
 #Je kan het oplossen met het volgende script: 
 
 #This command will show your Team in the Outlook Global address list and in the Group section in Outlook:
