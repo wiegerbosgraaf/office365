@@ -1,0 +1,12 @@
+#veranderen van een Teamnaam kan ook in het Teams beheerders dashboard: https://admin.teams.microsoft.com/dashboard
+#zie ook: https://www.c-sharpcorner.com/article/control-microsoft-teams-using-powershell/
+#connect: Connect-EXOPSSession -UserPrincipalName <your UPN>
+#connect Teams: Connect-MicrosoftTeams
+
+#mailadres van Team bijwerken:
+#zie ook: https://techcommunity.microsoft.com/t5/Office-365-Groups/Change-O365-group-email-address-using-powershell/td-p/132556
+#You can try the following cmdlet to update the primary SMTP address of the O365 group.
+
+Set-UnifiedGroup -Identity old@mydomain.com -EmailAddress @{remove=”SMTP:old@mydomain.com”;add=”SMTP:new@mydomain.com”,”smtp:old@mydomain.com”}
+
+#This should update the primary SMTP address to the new@mydomain.com and set the old@mydomain.com to a secondary SMTP address.
