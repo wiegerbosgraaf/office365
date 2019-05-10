@@ -10,3 +10,4 @@
 Set-UnifiedGroup -Identity old@mydomain.com -EmailAddress @{remove=”SMTP:old@mydomain.com”;add=”SMTP:new@mydomain.com”,”smtp:old@mydomain.com”}
 
 #This should update the primary SMTP address to the new@mydomain.com and set the old@mydomain.com to a secondary SMTP address.
+#test
