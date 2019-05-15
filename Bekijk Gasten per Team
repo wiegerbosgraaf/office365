@@ -1,0 +1,17 @@
+1.Connect to Azure powershell :   
+
+     1. Download azure powershell : 
+https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx
+
+   2.Connect-Msolservice
+   3.Get-MsolUser | Where-Object { $_.UserType -eq "Guest" }
+
+2. Connect to Microsoft teams 
+
+   1. Download sfb powershell module 
+     https://www.microsoft.com/en-in/download/details.aspx?id=39366
+   2.Install-Module MicrosoftTeams
+    3.Connect-MicrosoftTeams
+    4.Get-Team
+   5.Select group id from step 4 whose guest users you want to know 
+    6.Get-TeamUser
